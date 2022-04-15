@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/menu-mobile.css">
+  <link rel="stylesheet" href="../css/carousel.css">
+  <title>Registro</title>
+</head>
+
+<body> 
+  <header>
+    <h1 href="../index.html" >
+      <img src="../Images2/logo_transparent.png" alt="Nome da empresa">
+    </h1>
+
+    <input type="checkbox" id="control-nav">
+    <label for="control-nav" class="control-nav"></label>
+    <label for="control-nav" class="control-nav-close"></label>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">home</a>
+        </li>
+        <li>
+          <a href="atividades.html">atividades</a>
+        </li>
+        <li>
+          <a href="contato.html">contato</a>
+        </li>
+        <li>
+          <a class="active" href="#">registre-se</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="carousel">
+    <img src="../Images2/run/run4.jpg" alt="pista de atletismo">
+    <img src="../Images2/bike/mtb2.jpg" alt="competição de MTB">
+    <img src="../Images2/aqua/natacao8.jpg" alt="competição de natação">
+    <img src="../Images2/run/run5.jpg" alt="competição de natação2">        
+</section>
+
+  <section id="registro-container">
+    <h2 id="titulo">Tabela de Atletas</h2>
+
+    <article class="form-crud-container">
+      <h3 class="crud-title" >Informações do Atleta</h3>
+      <form class="crud-form">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome">
+        </div>
+
+        <div>
+          <label for="idade">Idade</label>
+          <input type="number" name="idade" id="idade">
+        </div>
+
+        <div>
+          <label for="modalidade">Modalidade</label>
+          <input type="text" name="modalidade" id="modalidade">
+        </div>
+
+        <div>
+          <label for="pontos">Pontos</label>
+          <input type="number" name="pontos" id="pontos">
+        </div>
+
+        <div>
+          <button type="submit" id="enviar">Enviar</button>
+          <input type="hidden" name="id">
+        </div>
+      </form>
+    </article>
+
+    <article class="table-crud-container">
+      <h2>Ver Nomes</h2>
+      <table class="crud-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Modalidade</th>
+            <th>Pontos</th>
+            <th>Opção</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </article>
+    <template id="crud-template">
+      <tr>
+        <td class="nome"></td>
+        <td class="idade"></td>
+        <td class="modalidade"></td>
+        <td class="pontos"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Excluir</button>
+        </td>
+      </tr>
+    </template>
+  </section>
+
+
+  <!-- <div class="form-container">
+    <h2 id="titulo">Registro de Atletas</h2>
+
+    <form id="registro">
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" autofocus placeholder="Digite seu nome" maxlength="20">
+      </div>
+
+      <div>
+        <label for="idade">Idade</label>
+        <input type="number" name="idade" id="idade" placeholder="Sua idade" min="0" max="80">
+      </div>
+
+      <div>
+        <label for="modalidade">Modalidade</label>
+        <input type="text" name="modalidade" id="modalidade" placeholder="Modalidade" maxlength="15">
+      </div>
+
+      <div>
+        <label for="pontos">Pontos</label>
+        <input type="number" name="pontos" id="pontos" placeholder="Informa a pontuação" min="0" max="100">
+      </div>
+
+      <div>
+        <button class="saiba-mais" id="inserir">Inserir</button>
+        <button class="saiba-mais" id="listar">Listar</button>
+        <button class="saiba-mais" id="cadastrar">Cadastrar</button>
+      </div>
+    </form>
+  </div> -->
+
+  <!-- <div class="tabela-container">
+
+    <table id="tabela">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Modalidade</th>
+          <th>Pontos</th>
+        </tr>
+      </thead>
+
+      <tbody id="tabela-atletas">
+        <tr>
+          <td>Thiago</td>
+          <td>38</td>
+          <td>Corrida</td>
+          <td>77</td>
+        </tr>
+      </tbody>
+
+      apenas para fim didático o tfoot é o rodapé da tabela
+      <tfoot>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tfoot>
+
+    </table>
+  </div> -->
+
+  <footer>
+    <address>
+      Rua Amador Bueno, 100 <br>
+      Vila Industrial - Campinas <br>
+      CEP: 13035-030 <br>
+      Tel.: 19 1234-5678
+    </address>
+    <p> © Alguns direitos reservados | &#60; Guilherme > </p>
+  </footer>
+
+  <!-- <script src="../script/adiciona-atleta.js"></script> -->
+  <script src="../script/crud.js"></script>
+  <script src="../script/jquery-3.6.0.min.js"></script>
+<script src="../script/carousel.js"></script>
+</body>
+
+</html>

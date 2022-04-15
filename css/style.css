@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: -apple-system, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+img {
+    max-width:100%;
+}
+
+header {
+    background:#444;   
+    height: auto;
+    padding:0 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+header img {
+    width:20%;
+    width: 120px;
+}
+
+
+nav li {
+    display: inline;
+    font-size: 18px;
+    /* rem = root em: 1rem = 16px contexto elemento html (root)*/
+    /* font-size: 2rem; */
+    /* em : = 1em = 16px = contexto elemento pai*/
+    /* font-size: 2em; */
+}
+
+nav a {
+    padding:0 10px;
+    text-decoration: none;
+    color:#bbb;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color:#fff;
+    transition:all 0.3s;
+}
+
+nav a.active{
+    text-decoration: underline;
+    /* color:white */
+}
+
+#carousel{
+    height:400px;
+    /* resolver dia (31/03) */
+}
+
+#carousel img{
+    max-height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position:bottom;
+}
+
+main{
+    background:#f0e3d7;
+    padding:10%;
+}
+
+main section{
+    margin:0 auto;
+    width:80%;
+}
+
+main h2, 
+main h3{
+    color:#333;
+    text-transform: uppercase;
+    font-size:30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 24px;
+}
+
+hr {
+    margin: 5px auto 40px;
+    width: 30%;
+    border:0;
+    height: 2px;
+    background-image: linear-gradient(to right, 
+     rgba(255,0,255,0),
+     rgba(0,0,0,0.75),
+    rgba(255,0,255,0) );
+}
+
+.atividades-container {
+    background-color: #444;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 60px 0;
+}
+
+.atividades{
+    display:flex;
+    justify-content:space-around;
+    gap: 50px;
+}
+
+.atividades article {
+    width: 30%;
+}
+
+.atividades div img,
+.atividades article img {
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.atividades div img:hover{
+    transform: scale(1.05);
+    transition:all 0.3s;
+}
+.saiba-mais{
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color: blue;
+    border: solid 2px white;
+    width: 150px;
+    cursor:pointer;
+    display:inline-block;
+    transition: all 0.5s;
+}
+
+.saiba-mais:hover{
+    color: blue;
+    background: white;
+    border: 2px solid blue;
+    transition: all 0.5s;
+}
+
+.empresa i {
+    font-size: 40px;
+   margin-bottom: 10px;
+}
+
+.empresa {
+    display:flex;
+    justify-content:space-between;
+    padding: 250px 10% 100px;
+    background-image: url(../Images2/crossfit1.jpg);
+    background-size: 110%;
+}
+
+.empresa article{
+    background:#ef7a2e;
+    border-radius: 10px;
+    border:solid #ccc 1px;
+    text-align: center;
+    margin: 0 10px;
+    padding:30px 15px;
+}
+
+.empresa p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.motivacao{
+    background-color: #f0e3d7;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.motivacao div{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.motivacao aside{
+    width: 50%;
+    padding: 5%;
+}
+
+.motivacao div img{
+    width: 60%;
+    object-fit: cover;
+}
+
+.motivacao h3{
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.motivacao p {
+    line-height: 22px;
+}
+.vantagem {
+    width: 106%;
+  }
+
+footer {
+    background: #444;
+    color: #ccc;
+  }
+
+footer address{
+    line-height: 20px;
+    padding: 50px 10% 20px;
+}
+
+footer p{
+    margin-top: 15px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* atividades.html */
+.faca-parte{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    padding: 5% 5% 0;
+}
+
+.faca-parte aside,
+.faca-parte div{
+    width: 50%;
+    min-width: 200px;
+    
+}
+
+.faca-parte-cta{
+    background-color:#fff;
+    border-radius: 7px;
+    border: #ccc;
+    padding: 2%;
+}
+
+.faca-parte-cta h3{
+    font: 24px;
+    word-wrap:break-word;
+}
+
+.filiacao {
+    display: flex;
+    justify-content:space-around;
+    background-image: linear-gradient(to bottom, antiquewhite,#444);
+    padding: 10%;
+    align-items: center;
+}
+.filiacao article, 
+.filiacao div {
+    width: 50%;
+}
+
+.filiacao article+div img{
+    padding:10%;
+    
+}
+
+.filiacao h2, 
+.filiacao h3{
+    text-transform: uppercase;
+    margin: 3% 0;
+}
+
+.redes-sociais img {
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.error{
+    color: red;
+}
+
+.form-container{
+    margin: 0 auto;
+    width: 80%;
+}
+#titulo {
+    font-size: 1,5rem;
+    margin: 20px 0;
+}
+
+#registro label,
+#registro input {
+    display: block;   
+}
+#registro input{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 30%;
+    height: 30px;
+}
+#registro input:focus{
+    background: #ccc;
+}
+
+.tabela-container{
+    width: 80%;
+    margin: 5% auto;
+}
+
+table {
+ margin:5% auto 0;
+ min-width: 100%;
+ font-size:1.2rem;
+ text-transform: uppercase;
+ text-align: center;
+ overflow-x: auto;
+ display: block;
+  border-collapse: collapse; 
+}
+th {
+    background-color: cornflowerblue;
+}
+th,td {
+    padding:0.5rem 1rem;
+    width: 25%;
+
+}
+tr:nth-child(odd) {
+    background: rgb(220, 216, 216);
+}
+
+tr:nth-child(even) {
+    background:#ccc;
+}
+/*
+com seletor forte pegando o terceiro tr
+tr:nth-child(3) {
+    background:#ef7a2e; 
+} */
+ 
+/* pegandoo primeiro elemento 
+ tr:first-child {
+    background-color: #444;
+    color: #ccc;
+}
+    pegando o ultimo elemento
+tr:last-child {
+    background-color: #444;
+    color: #ccc;
+} */
+
+/* telas abaixo de 930px */
+@media screen and (max-width: 930px) {
+    .atividades{
+        flex-direction: column;
+        width: 80%;
+        margin: 10% auto 7%;
+        align-items: center;
+
+    }
+
+    .atividades div{
+        margin-top: 5%;
+
+    }
+
+    .atividades article {
+        width: 80%;
+    }
+
+    .empresa{
+        background-image: none;
+        /* to-do: usar a imagem e manipular o size a cada break point */
+        background-color: #ccc;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .empresa article{
+        margin:3% auto;
+        width: 80%;
+    }
+
+}
+
+@media  screen and (max-width: 709px){
+    #carousel{
+        height: 250px;
+
+    }
+
+    .faca-parte,
+    .filiacao{
+        flex-direction: column;       
+    }
+
+    .filiacao{
+        padding:10% 0;
+    }
+
+    .filiacao article,
+    .filiacao div{
+        width: 75%;
+    }
+
+    .filiacao article+div img{
+        padding: 0%;
+    }
+
+    .redes-sociais{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+.redes-sociais img {
+    width: 15%;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+{
+  "atletas": [
+    {
+      "nome": "Guilherme",
+      "idade": "15",
+      "modalidade": "moto",
+      "pontos": "100",
+      "id": 4
+    },
+    {
+      "nome": "vinicius",
+      "idade": "18",
+      "modalidade": "bike",
+      "pontos": "10",
+      "id": 5
+    }
+  ]
+}
