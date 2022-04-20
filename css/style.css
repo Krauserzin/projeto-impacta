@@ -308,6 +308,12 @@ footer p{
     font-size: 1,5rem;
     margin: 20px 0;
 }
+#form-info {
+   margin-left: 10%;
+    margin-right: 50%;
+
+    
+}
 
 #registro label,
 #registro input {
