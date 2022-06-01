@@ -359,6 +359,10 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background:#ccc;
 }
+
+.btn {
+    margin-top: 10px;
+}
 /*
 com seletor forte pegando o terceiro tr
 tr:nth-child(3) {
